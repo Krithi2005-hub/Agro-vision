@@ -28,9 +28,9 @@ model.fit(X_train, y_train)
 # Evaluate
 predictions = model.predict(X_test)
 mse = mean_squared_error(y_test, predictions)
-print(f"✅ Model trained successfully! MSE: {mse:.2f}")
+print(f" Model trained successfully! MSE: {mse:.2f}")
 
 # Save the model and label encoder
 joblib.dump(model, 'yield_model.pkl')
 joblib.dump(le, 'label_encoder.pkl')
-print("✅ Model saved as 'yield_model.pkl' and encoder saved as 'label_encoder.pkl'")
+print("Model saved as 'yield_model.pkl' and encoder saved as 'label_encoder.pkl'")
